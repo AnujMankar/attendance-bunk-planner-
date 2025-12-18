@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance & Bunk Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+    <button id="themeBtn" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+    <h1>📚 Attendance & Bunk Planner</h1>
+
+    <div class="card">
+        <div class="input-grid">
+            <input type="text" id="subject" placeholder=" Subject Name">
+            <input type="number" id="total" placeholder=" Total Lectures">
+            <input type="number" id="attended" placeholder="✅ Attended Lectures">
+            <input type="number" id="required" placeholder="🎯 Required % (eg: 75)">
+        </div>
+
+        <button class="add-btn" onclick="addSubject()">➕ Add Subject</button>
+
+        <p class="rule-note">* Attendance calculated using required percentage</p>
+        <h3 id="overall"></h3>
+
+
+        <div id="cardContainer"></div>
+    </div>
+
+    <footer>Made by Anuj</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
